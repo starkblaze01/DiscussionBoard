@@ -3,6 +3,39 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
+### Development
+
+- Clone Repository
+```
+git clone https://github.com/starkblaze01/DiscussionBoard
+cd DiscussionBoard
+```
+
+- Install Dependencies
+```
+npm install
+```
+
+- Set Up Firebase
+	- Create a firebase project from firebase console.
+	- Create a `.env` file at the root with following data.
+	```
+  SKIP_PREFLIGHT_CHECK=true
+  
+	REACT_APP_FIREBASE_API_KEY=<Your_Firebase_API_Key>
+	REACT_APP_FIREBASE_AUTH_DOMAIN=<Your_Firebase_Auth_Domain>
+	REACT_APP_FIREBASE_DATABASE_URL=<Your_Firebase_Database_URL>
+	REACT_APP_FIREBASE_PROJECT_ID=<Your_Firebase_Project_ID>
+	REACT_APP_FIREBASE_STORAGE_BUCKET=<Your_Firebase_Storage_Bucket>
+	REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<Your_Firebase_Messaging_Sender_ID>
+	```
+	Note: You must create custom environment variables beginning with `REACT_APP_`. Visit [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-development-environment-variables-in-env) for more information.
+
+- Run
+```
+npm start
+```
+
 ## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
